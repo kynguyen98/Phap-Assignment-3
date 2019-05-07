@@ -3,10 +3,14 @@ class complex{
 private:
 double real,img;
 public:
-complex(double real=0,double img=0);
+complex(float real=0,float img=0);
 complex operator+(const complex&) const;
+complex operator-(const complex&) const;
+complex operator*(const complex&) const;
+complex operator==(const complex&) const;
+void display() const;
 };
-complex::complex(double r,double i){
+complex::complex(float r,float i){
 	real=r;
 	img=i;
 }
@@ -16,10 +20,36 @@ complex complex::operator+ (const complex& c)const{
 	result.img=(this->img+c.img);
 	return result;
 }
+void complex::display()const{
+std::cout<<"Here are the result:\n";
+std::cout<<real<<"+"<<"("<<img<<"i)";
+}
+complex complex::operator-(const complex& c) const{
+	complex result;
+	result.real=(this->real-c.real);
+	result.img=(this->img-c.img);
+	return result;
+}
+complex complex::operator*(const complex& c)const{
+	complex result;
+	result.real=(this->real*c.real);
+	result.img=(this->img*c.img);
+	return result;
+}
+complex complex::operator==(const complex& c) const{
+	complex result;
+	result.real=(this->real==c.real);
+	result.img=(this->img==c.img);
+	return result;
+}
 int main(int argc, char *argv[]) {
 	std::cout << "Hello Easy C++ project!" << std::endl;
 	complex x(4,4);
 	complex y(6,6);
-	complex z=x+y;
+	//complex a=x+y;
+	complex b=x-y;
+	//complex c=x*y;
+	//complex e=x==y;
+	b.display();
 	return 0;
 }
