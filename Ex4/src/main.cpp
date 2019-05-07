@@ -32,8 +32,8 @@ complex complex::operator-(const complex& c) const{
 }
 complex complex::operator*(const complex& c)const{
 	complex result;
-	result.real=(this->real*c.real);
-	result.img=(this->img*c.img);
+	result.real=(this->real*c.real)-(this->img*c.img);
+	result.img=(this->img*c.img)+(this->img*c.real);
 	return result;
 }
 complex complex::operator==(const complex& c) const{
@@ -45,11 +45,11 @@ complex complex::operator==(const complex& c) const{
 int main(int argc, char *argv[]) {
 	std::cout << "Hello Easy C++ project!" << std::endl;
 	complex x(4,4);
-	complex y(6,6);
+	complex y(6,5);
 	//complex a=x+y;
-	complex b=x-y;
-	//complex c=x*y;
+	//complex b=x-y;
+	complex c=x*y;
 	//complex e=x==y;
-	b.display();
+	c.display();
 	return 0;
 }
