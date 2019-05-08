@@ -1,11 +1,13 @@
-#include<fstream>
 #include<iostream>
-#include<stdlib.h>
-#include<sstream>
-#include<string>
-#include<cmath>
-#include"matrix.h"
 #include"matrix.cpp"
-int main(){
+int main(int argc, char *argv[]){
+    matrix a(3,4);
+    matrix b(3,4);
+    matrix c=a+b;
+    std::cout<<a<<std::endl;
+    std::cout<<"---------------------"<<std::endl;
+    std::cout<<b<<std::endl;
+        std::cout<<"---------------------"<<std::endl;
+    std::cout<<c<<std::endl;
     return 0;
 }
