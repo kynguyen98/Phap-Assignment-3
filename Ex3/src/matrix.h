@@ -22,4 +22,5 @@ matrix operator-(matrix &m);
 matrix operator*(matrix &m);
 bool operator==(const matrix &m);
 };
+
 #endif
