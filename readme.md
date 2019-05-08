@@ -10,5 +10,6 @@
 # Date 08/05/2019
 - New approach creating 0's matrices 
 - New improved header file
+- Stuck at calling bool operator==(const &m) in the main.cpp
 
 
