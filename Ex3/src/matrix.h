@@ -1,34 +1,25 @@
-#ifndef lab3_assigment_3
-#define lab3_assignment_3
-#include <iostream>
-#include<vector>
-#include<tuple>
-#include<cmath>
-#include<fstream>
-#include<string>
-#include<sstream>
+#ifndef ____Phap_Assigment_3___Matrix
+#define ____Phap_Assigment_3___Matrix
+#include<iostream>
+#include<iomanip>
 #include<stdio.h>
-#include<stdlib.h>
-class Matrix{
+typedef float matrixdata;
+class matrix{
+friend std::ostream &operator<< (std::ostream &out, matrix &output);
 private:
-int row,columm;
-std::vector<std::vector<float> >data;
+int row,col;
+matrixdata **data;
 public:
-Matrix(int ,int, float);
-Matrix(const char *);
-Matrix(const Matrix &);
-~Matrix();
-//Matrix operations
-Matrix operator+(Matrix &);
-Matrix operator-(Matrix &);
-Matrix operator*(Matrix &);
-int operator ==(Matrix &);
-Matrix transpose();
-float& operator()(const int &,const int &);
 void display() const;
-int getrow() const;
-int getcol() const;
-std::tuple<Matrix, float, int> powerIter(int,float);
-Matrix defflation(Matrix &, float&);
+//constructor
+matrix (int rownum,int colnum);
+//copy constructor
+matrix (const matrix& m);
+//destructor
+~matrix();
+matrix operator+(matrix &m);
+matrix operator-(matrix &m);
+matrix operator*(matrix &m);
+
 };
 #endif
