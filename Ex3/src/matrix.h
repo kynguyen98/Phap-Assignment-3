@@ -10,7 +10,7 @@ private:
 int row,col;
 matrixdata **data;
 public:
-void display() const;
+//void display() const; no need to, founded a better way to print matrices
 //constructor
 matrix (int rownum,int colnum);
 //copy constructor
@@ -20,6 +20,6 @@ matrix (const matrix& m);
 matrix operator+(matrix &m);
 matrix operator-(matrix &m);
 matrix operator*(matrix &m);
-
+bool operator==(const matrix &m);
 };
 #endif
