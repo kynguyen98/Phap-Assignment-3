@@ -1,7 +1,7 @@
 # Phap Assignment 3
 
 # Date 2/05/2019 
-- All done except for ex3 there's are some problem with it
+- There are some problem with Ex3
 
 # Date 06/05/2019
 - Creating dynamic matrices in class by reading matrices in a.txt file
