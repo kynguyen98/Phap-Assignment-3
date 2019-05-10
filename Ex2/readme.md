@@ -3,5 +3,5 @@
 <details>
 <summary>Task</summary>
 <br>
--[x] Add other overloaded operator functions(-,*,/)
+- [x] Add other overloaded operator functions(-,*,/)
 </details>
