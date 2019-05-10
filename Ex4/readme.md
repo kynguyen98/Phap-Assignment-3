@@ -4,7 +4,7 @@
 |Data members                |Description                                                        |
 |----------------------------|:-----------------------------------------------------------------|
 |float real                  |                                                |
-float image                    real + j*image                                              |
+|float image                    real + j*image                                              |
 |Complex(float r=0, float i=0)|Default constructor|
 |Complex(const Complex &A) |Copy constructor|
 |Complex operator+(Complex &B) |Addition of two Complexes|
