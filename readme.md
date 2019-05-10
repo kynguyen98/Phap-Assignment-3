@@ -12,4 +12,9 @@
 - New improved header file
 - Stuck at calling bool operator==(const &m) in the main.cpp
 
-
+# Date 9/05/2019
+- Hans't come up with the solution for excercise 6 which is 
+- Write conversion functions to convert:
+a. a float number to Real object (ex. Real obj = 1.5)
+b. a Fraction object to a float number (ex. float a = float(FracObj))
+c. a Fraction object to a Real object (FracObj = RealObj)
