@@ -27,11 +27,10 @@ fraction fraction::operator*(const fraction &f)const{
     return result;
 }
 bool fraction::operator==(const fraction &f) const{
-    bool result=true;
-    if (this->dinominator!=f.dinominator&&this->numerator!=f.numerator)
-        return !result;
-        else 
-            return result ; 
+    float fraction1,fraction2;
+    fraction1=numerator*f.dinominator;
+    fraction2=dinominator*f.numerator;
+    return (fraction1==fraction2);
 }
 void fraction::display()const{
     //int num=numerator;
