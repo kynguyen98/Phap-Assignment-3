@@ -17,7 +17,7 @@
 <details>
 <summary>Write conversion functions to convert</summary>
 <br>
-A float number to Real object (ex. Real obj = 1.5)
-A Fraction object to a float number (ex. float a = float(FracObj))
+A float number to Real object (ex. Real obj = 1.5)<br>
+A Fraction object to a float number (ex. float a - = float(FracObj))<br>
 A Fraction object to a Real object (FracObj = RealObj)
 </details>
